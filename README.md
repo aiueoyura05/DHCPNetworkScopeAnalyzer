@@ -143,7 +143,6 @@ DHCPOptions = {
 
 
 >DHCPとBOOTPの継承関係
-
 class BOOTP(Packet):
     name = "BOOTP"　
     fields_desc = [　

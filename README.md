@@ -2,6 +2,7 @@
 メモ
 
 DHCPのオプション
+
 DHCPOptions = {
     0: "pad",
     1: IPField("subnet_mask", "0.0.0.0"),
@@ -134,21 +135,22 @@ DHCPOptions = {
 
 
 DHCPとBOOTPの継承関係
+
 class BOOTP(Packet):
-    name = "BOOTP"
-    fields_desc = [
-        ByteEnumField("op", 1, {1: "BOOTREQUEST", 2: "BOOTREPLY"}),
-        ByteEnumField("htype", 1, HARDWARE_TYPES),
-        ByteField("hlen", 6),
-        ByteField("hops", 0),
-        XIntField("xid", 0),
-        ShortField("secs", 0),
-        FlagsField("flags", 0, 16, "???????????????B"),
-        IPField("ciaddr", "0.0.0.0"),
-        IPField("yiaddr", "0.0.0.0"),
-        IPField("siaddr", "0.0.0.0"),
-        IPField("giaddr", "0.0.0.0"),
-        _BOOTP_chaddr("chaddr", b"", length=16),
-        StrFixedLenField("sname", b"", length=64),
-        StrFixedLenField("file", b"", length=128),
-        StrEnumField("options", b"", {dhcpmagic: "DHCP magic"})]
+    name = "BOOTP"　
+    fields_desc = [　
+        ByteEnumField("op", 1, {1: "BOOTREQUEST", 2: "BOOTREPLY"}),　
+        ByteEnumField("htype", 1, HARDWARE_TYPES),　
+        ByteField("hlen", 6),　
+        ByteField("hops", 0),　
+        XIntField("xid", 0),　
+        ShortField("secs", 0),　
+        FlagsField("flags", 0, 16, "???????????????B"),　
+        IPField("ciaddr", "0.0.0.0"),　
+        IPField("yiaddr", "0.0.0.0"),　
+        IPField("siaddr", "0.0.0.0"),　
+        IPField("giaddr", "0.0.0.0"),　　
+        _BOOTP_chaddr("chaddr", b"", length=16),　
+        StrFixedLenField("sname", b"", length=64),　　
+        StrFixedLenField("file", b"", length=128),　　　
+        StrEnumField("options", b"", {dhcpmagic: "DHCP magic"})]　　

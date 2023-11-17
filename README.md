@@ -1,6 +1,10 @@
 DHCPNetworkScopeAnalyzer
 scapyを用いて、ネットワークアドレスの範囲を取得する。
+
+
 DHCPdiscoverを構築し、DHCPOfferの解析を行う。
+
+
 解析した内容からネットワーク規模を示す。(wip for portscannig tool)
 
 ![Uploading image.png…]()
@@ -11,10 +15,18 @@ by https://infocenter.nokia.com/public/7750SR227R1A/index.jsp?topic=%2Fcom.nokia
 scapy/layers/dhcp.py
 メモ
 >DHCPのオプション
+>
+>
 DHCPOptions = {
     0: "pad",
+
+    
     1: IPField("subnet_mask", "0.0.0.0"),
+
+    
     2: IntField("time_zone", 500),
+
+    
     3: IPField("router", "0.0.0.0"),
     4: IPField("time_server", "0.0.0.0"),
     5: IPField("IEN_name_server", "0.0.0.0"),

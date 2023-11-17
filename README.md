@@ -1,10 +1,11 @@
-![image](https://github.com/aiueoyura05/DHCPNetworkScopeAnalyzer/assets/104673838/9e704490-3219-4266-86b7-13ba33d54213)# DHCPNetworkScopeAnalyzer
+DHCPNetworkScopeAnalyzer
 scapyを用いて、ネットワークアドレスの範囲を取得する。
-DHCPの
+DHCPdiscoverを構築し、DHCPOfferの解析を行う。
+解析した内容からネットワーク規模を示す。(wip for portscannig tool)
 
 ![Uploading image.png…]()
-
-
+![image](https://github.com/aiueoyura05/DHCPNetworkScopeAnalyzer/assets/104673838/9e704490-3219-4266-86b7-13ba33d54213)# 
+by https://infocenter.nokia.com/public/7750SR227R1A/index.jsp?topic=%2Fcom.nokia.Triple_Play_Service_Delivery_Architecture_Guide%2Fdhcp_principles-ai9jxkmatx.html
 
 [参考]
 scapy/layers/dhcp.py

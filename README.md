@@ -1,8 +1,15 @@
-# DHCPNetworkScopeAnalyzer
+![image](https://github.com/aiueoyura05/DHCPNetworkScopeAnalyzer/assets/104673838/9e704490-3219-4266-86b7-13ba33d54213)# DHCPNetworkScopeAnalyzer
+scapyを用いて、ネットワークアドレスの範囲を取得する。
+DHCPの
+
+![Uploading image.png…]()
+
+
+
+[参考]
+scapy/layers/dhcp.py
 メモ
-
-DHCPのオプション
-
+>DHCPのオプション
 DHCPOptions = {
     0: "pad",
     1: IPField("subnet_mask", "0.0.0.0"),
@@ -134,7 +141,7 @@ DHCPOptions = {
 }
 
 
-DHCPとBOOTPの継承関係
+>DHCPとBOOTPの継承関係
 
 class BOOTP(Packet):
     name = "BOOTP"　

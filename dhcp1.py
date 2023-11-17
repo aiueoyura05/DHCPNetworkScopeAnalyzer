@@ -29,12 +29,5 @@ def get_dhcp_offer(interface):
 
     return None, None
 
-# Example usage
-interface = "192.168.43.43"  # Replace with your network interface
-ip_offer, subnet_mask = get_dhcp_offer(interface)
-if ip_offer and subnet_mask:
-    print(f"Received DHCP Offer: IP - {ip_offer}, Subnet Mask - {subnet_mask}")
-else:
-    print("No DHCP Offer received.")
 
 

@@ -19,14 +19,8 @@ scapy/layers/dhcp.py
 >
 DHCPOptions = {
     0: "pad",
-
-    
     1: IPField("subnet_mask", "0.0.0.0"),
-
-    
     2: IntField("time_zone", 500),
-
-    
     3: IPField("router", "0.0.0.0"),
     4: IPField("time_server", "0.0.0.0"),
     5: IPField("IEN_name_server", "0.0.0.0"),
@@ -155,6 +149,8 @@ DHCPOptions = {
 
 
 >DHCPとBOOTPの継承関係
+>
+>
 class BOOTP(Packet):
     name = "BOOTP"　
     fields_desc = [　

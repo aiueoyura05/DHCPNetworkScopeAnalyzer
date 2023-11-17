@@ -150,11 +150,13 @@ DHCPOptions = {
 
 
 >DHCPとBOOTPの継承関係
->
->
+
 class BOOTP(Packet):
+
     name = "BOOTP"　
+    
     fields_desc = [　
+    
         ByteEnumField("op", 1, {1: "BOOTREQUEST", 2: "BOOTREPLY"}),　
         ByteEnumField("htype", 1, HARDWARE_TYPES),　
         ByteField("hlen", 6),　

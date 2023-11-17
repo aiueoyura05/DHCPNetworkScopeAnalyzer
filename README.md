@@ -1,9 +1,7 @@
 DHCPNetworkScopeAnalyzer
 scapyを用いて、ネットワークアドレスの範囲を取得する。
 
-
 DHCPdiscoverを構築し、DHCPOfferの解析を行う。
-
 
 解析した内容からネットワーク規模を示す。(wip for portscannig tool)
 

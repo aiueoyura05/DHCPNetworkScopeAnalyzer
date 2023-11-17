@@ -16,8 +16,11 @@ scapy/layers/dhcp.py
 >
 >
 DHCPOptions = {
+
     0: "pad",
+    
     1: IPField("subnet_mask", "0.0.0.0"),
+    
     2: IntField("time_zone", 500),
     3: IPField("router", "0.0.0.0"),
     4: IPField("time_server", "0.0.0.0"),

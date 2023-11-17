@@ -1,7 +1,7 @@
 # DHCPNetworkScopeAnalyzer
 メモ
 
->DHCPのオプション
+DHCPのオプション
 DHCPOptions = {
     0: "pad",
     1: IPField("subnet_mask", "0.0.0.0"),
@@ -132,7 +132,8 @@ DHCPOptions = {
     255: "end"
 }
 
->DHCPとBOOTPの継承関係
+
+DHCPとBOOTPの継承関係
 class BOOTP(Packet):
     name = "BOOTP"
     fields_desc = [
